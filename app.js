@@ -40,7 +40,11 @@ function drawWeather(d) {
   if (d.weather[0].main === "Rain") {
     icon.className = "rainy";
     weatherDisplay.className = "weather-display";
-  } else if (d.weather[0].main === "Clouds" || d.weather[0].main === "Mist") {
+  } else if (
+    d.weather[0].main === "Clouds" ||
+    d.weather[0].main === "Mist" ||
+    d.weather[0].main === "Fog"
+  ) {
     icon.className = "cloudy";
     weatherDisplay.className = "weather-display";
   } else if (d.weather[0].main === "Clear") {
