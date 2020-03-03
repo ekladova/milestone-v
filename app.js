@@ -39,10 +39,13 @@ function drawWeather(d) {
 
   if (d.weather[0].main === "Rain") {
     icon.className = "rainy";
+    weatherDisplay.className = "weather-display";
   } else if (d.weather[0].main === "Clouds") {
     icon.className = "cloudy";
+    weatherDisplay.className = "weather-display";
   } else if (d.weather[0].main === "Clear") {
     icon.className = "sunny";
+    weatherDisplay.className = "weather-display";
   }
 }
 
@@ -52,4 +55,11 @@ function clearAll() {
   loc.innerHTML = "";
   icon.className = "";
   cityInput.value = "";
+  weatherDisplay.className = "weather-display hidden";
 }
+
+document.onkeydown = function(event) {
+  if (event.keyCode === 13) {
+    weatherBallon();
+  }
+};
