@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.5em;
+  font-family: "Chakra Petch";
+}
+
+.bcg {
+  background-image: url(./assets/city.png);
+  height: 15vw;
+  width: 100%;
+  background-size: cover;
+  margin-bottom: 2vw;
+}
+
+.page {
+  width: 60%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.city-input {
+  padding: 0.5em;
+  font-size: 0.7em;
+  text-align: center;
+}
+
+.weather-display {
+  border: 2px solid black;
+  height: fit-content;
+  margin: 5vw 5vw 0 5vw;
+  padding: 2vw 6vw;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text {
+  width: 10vw;
+}
+
+#_icon {
+  float: left;
+  background-size: cover;
+  height: 150px;
+  width: 150px;
+}
+
+.sunny {
+  background: url(./assets/sunny.png) left center no-repeat;
+
+  animation: moveX 700ms steps(2) infinite;
+}
+.cloudy {
+  background: url(./assets/cloudy.png) left center no-repeat;
+
+  animation: moveX 700ms steps(2) infinite;
+}
+.rainy {
+  background: url(./assets/rainy.png) left center no-repeat;
+
+  animation: moveX 700ms steps(2) infinite;
+}
+
+/* .windy {
+  background-image: url(./assets/windy.gif);
+}
+.hot {
+  background-image: url(./assets/hot.gif);
+}
+.cold {
+  background-image: url(./assets/cold.gif);
+} */
+
+.hidden {
+  visibility: hidden;
+}
+
+.inputs {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.5em;
+  margin: auto;
+}
+
+.button {
+  background-color: transparent;
+  padding: 0.5vw 3vw;
+  border: 2px solid black;
+  cursor: pointer;
+  margin: 0.5vw auto;
+  width: 10vw;
+}
+
+.button:hover {
+  opacity: 0.5;
+}
+
+@keyframes moveX {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: -300px;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .page {
+    width: 100%;
+  }
+
+  .weather-display {
+    flex-direction: column;
+  }
+
+  .city-input {
+    padding: 1vw 3vw;
+    height: 7vw;
+    width: 40vw;
+  }
+
+  .button {
+    width: 15vw;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .page {
+    flex-direction: column;
+  }
+}
