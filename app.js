@@ -13,7 +13,7 @@ function cityName() {
 function weatherBallon() {
   const key = "fafe2682d7f5718dcf709b0d8c4aeee8";
   fetch(
-    "http://api.openweathermap.org/data/2.5/weather?q=" +
+    "//api.openweathermap.org/data/2.5/weather?q=" +
       cityName() +
       "&APPID=" +
       key
