@@ -30,10 +30,11 @@ body {
   font-size: 0.7em;
   text-align: center;
   margin-bottom: 2vw;
+  border: 1px black solid;
 }
 
 .weather-display {
-  border: 2px solid black;
+  border: 5px dashed #dbe2fc;
   height: fit-content;
   margin: 5vw 5vw 0 5vw;
   padding: 2vw 6vw;
@@ -81,9 +82,9 @@ body {
   background-image: url(./assets/cold.gif);
 } */
 
-.hidden {
+/* .hidden {
   visibility: hidden;
-}
+} */
 
 .inputs {
   display: flex;
