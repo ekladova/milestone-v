@@ -139,5 +139,42 @@ body {
 @media only screen and (max-width: 700px) {
   .page {
     flex-direction: column;
+    font-size: 8vw;
+  }
+
+  #description {
+    margin: 0 0 5vw 0;
+  }
+
+  .text {
+    width: 100%;
+    font-size: 5vw;
+  }
+
+  .bcg {
+    height: 50vw;
+    background-size: cover;
+  }
+
+  .inputs {
+    align-items: center;
+  }
+
+  .city-input {
+    width: 60vw;
+    height: 20vw;
+    margin-bottom: 10vw;
+    font-size: 9vw;
+  }
+
+  .button {
+    width: 40vw;
+    height: 10vw;
+    font-size: 4.5vw;
+  }
+
+  .weather-display {
+    justify-items: center;
+    width: 50%;
   }
 }
