@@ -43,7 +43,8 @@ function drawWeather(d) {
   } else if (
     d.weather[0].main === "Clouds" ||
     d.weather[0].main === "Mist" ||
-    d.weather[0].main === "Fog"
+    d.weather[0].main === "Fog" ||
+    d.weather[0].main === "Snow"
   ) {
     icon.className = "cloudy";
     weatherDisplay.className = "weather-display";
